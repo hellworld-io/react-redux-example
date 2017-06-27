@@ -1,29 +1,30 @@
 //import liraries
 import React, { Component, PropTypes } from 'react';
-import Counter from './Counter'
 
 const propTypes = {
-
+    number: PropTypes.number
 };
 
 const defaultProps = {
-
+    number: -1
 };
 
 // create a component
-class App extends Component {
+class Value extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <Counter />
+            <div>
+                <h2>{this.props.number}</h2>
+            </div>
         );
     }
 }
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
+Value.propTypes = propTypes;
+Value.defaultProps = defaultProps;
 
-export default App;
+export default Value;
