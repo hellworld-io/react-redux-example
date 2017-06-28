@@ -1,5 +1,5 @@
-//import liraries
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 
 const propTypes = {
     number: PropTypes.number
@@ -11,10 +11,6 @@ const defaultProps = {
 
 // create a component
 class Value extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
